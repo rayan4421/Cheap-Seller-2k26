@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrainRoyan</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#e0e0e0;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  align-items:center;
+  padding:20px;
+}
+
+.card{
+  background:#fff;
+  width:400px;
+  border-radius:14px;
+  padding:16px;
+  box-shadow:0 3px 8px rgba(0,0,0,.2);
+}
+
+.badge{
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.title{
+  font-weight:bold;
+  margin-bottom:6px;
+}
+
+.subtitle{
+  font-size:14px;
+  color:#555;
+  margin-bottom:10px;
+}
+
+.content{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.info{
+  font-size:14px;
+}
+
+.price{
+  font-size:24px;
+  font-weight:bold;
+  margin:6px 0;
+}
+
+.paypal{
+  display:inline-block;
+  margin-top:6px;
+  padding:8px 12px;
+  background:#0070ba;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  font-size:14px;
+}
+
+.paypal:hover{
+  background:#005ea6;
+}
+
+img{
+  width:95px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.85);
+  justify-content:center;
+  align-items:center;
+}
+
+.overlay img{
+  max-width:90%;
+  max-height:90%;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TACO COMBI - BEST SELLER -->
+<div class="card">
+  <div class="badge">🚨 BEST SELLER! 💥 Get Your 🔥 La Taco Combination 831M!!!! 🔥 Today! 🎁</div>
+  <div class="title">Taco Combi · Secret · 831 M/s</div>
+  <div class="subtitle">Taco Combination | 831M/S | Instant Delivery ✅</div>
+
+  <div class="content">
+    <div class="info">
+      <div>👤 RayanRayan5701 ✔</div>
+      <div class="price">40 €</div>
+      <div>⏱ Livraison garantie : 20 min</div>
+      <a class="paypal" href="https://www.paypal.com/paypalme/RayanRayan5701/40">
+        💳 Payer avec PayPal
+      </a>
+    </div>
+
+    <img class="thumb"
+      src="https://assetsdelivery.eldorado.gg/v7/_offers-v2_/e949487b-5188-4a4c-a752-935ca64d0fa6_Offer_20260108140528_1685890Large.jpeg?w=255">
+  </div>
+</div>
+
+<!-- ORCALEDON -->
+<div class="card">
+  <div class="title">Brainrot · Secret · Orcaledon · 750–999 M/s</div>
+  <div class="subtitle">Orcaledon | Radioactive · 980M/S | Fast Delivery ✅</div>
+
+  <div class="content">
+    <div class="info">
+      <div>👤 RayanRayan5701 ✔</div>
+      <div class="price">40 €</div>
+      <div>⏱ Livraison garantie : 20 min</div>
+      <a class="paypal" href="https://www.paypal.com/paypalme/RayanRayan5701/40">
+        💳 Payer avec PayPal
+      </a>
+    </div>
+
+    <img class="thumb"
+      src="https://assetsdelivery.eldorado.gg/v7/_offers-v2_/ed433df8-64ab-4c8c-9921-d57456c296b7_Offer_20260110204215_2628620Large.jpeg?w=255">
+  </div>
+</div>
+
+<!-- GINGER SEKOLAH -->
+<div class="card">
+  <div class="title">Ginger Sekolah · Secret · 900 M/s</div>
+  <div class="subtitle">Ginger Sekolah | 900M/S | Fast Delivery ✅</div>
+
+  <div class="content">
+    <div class="info">
+      <div>👤 RayanRayan5701 ✔</div>
+      <div class="price">40 €</div>
+      <div>⏱ Livraison garantie : 20 min</div>
+      <a class="paypal" href="https://www.paypal.com/paypalme/RayanRayan5701/40">
+        💳 Payer avec PayPal
+      </a>
+    </div>
+
+    <img class="thumb"
+      src="https://assetsdelivery.eldorado.gg/v7/_offers-v2_/289e0cbc-d5b1-44ac-899a-900319304d5c_Offer_20260116065745_1663765Large.jpg?w=255">
+  </div>
+</div>
+
+<!-- SWAGGY BROS -->
+<div class="card">
+  <div class="title">Swaggy Bros · Secret · 970 M/s</div>
+  <div class="subtitle">Swaggy Bros | 970M/S | Fast Delivery ✅</div>
+
+  <div class="content">
+    <div class="info">
+      <div>👤 RayanRayan5701 ✔</div>
+      <div class="price">45 €</div>
+      <div>⏱ Livraison garantie : 20 min</div>
+      <a class="paypal" href="https://www.paypal.com/paypalme/RayanRayan5701/45">
+        💳 Payer avec PayPal
+      </a>
+    </div>
+
+    <img class="thumb"
+      src="https://assetsdelivery.eldorado.gg/v7/_offers-v2_/8d439abf-f76b-4e09-b6c9-10d751e32315_Offer_20260111192318_6488280Large.png?w=255">
+  </div>
+</div>
+
+<!-- OVERLAY IMAGE -->
+<div class="overlay" id="overlay">
+  <img>
+</div>
+
+<script>
+const thumbs=document.querySelectorAll('.thumb');
+const overlay=document.getElementById('overlay');
+const overlayImg=overlay.querySelector('img');
+
+thumbs.forEach(img=>{
+  img.onclick=()=>{
+    overlayImg.src=img.src.replace('w=255','');
+    overlay.style.display='flex';
+  }
+});
+overlay.onclick=()=>overlay.style.display='none';
+</script>
+
+</body>
+</html>
